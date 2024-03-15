@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--for using the bootstrap utilities-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css"/> <!--connecting the css file-->
+    <script src="https://kit.fontawesome.com/ad64b99878.js" crossorigin="anonymous"></script> <!--for using the font awesome icons-->
+  </head>
+  <body>
+    <!--Home Page-->
+    <div id="sectionHome">
+        <div class="home-cont">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#sectionHome">
+                        <img src="https://static.wixstatic.com/media/2d34e5_1e4b2c2047144b8484c6e78ad38dcb9d~mv2.jpg/v1/fill/w_242,h_99,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GOGAGA%20NEW%20LOGO%20FINAL-01.jpg" class="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-items-cont" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                          <a class="nav-link nav-item" href="#sectionHoliday">Holiday</a>
+                            <a class="nav-link nav-item" href="#sectionFlight">Flight Booking</a>
+                            <a class="nav-link nav-item" href="#sectionHotel">Hotel Booking</a>
+                            <a class="nav-link nav-item" href="#sectionPackage">Packages Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="caption">
+                <h1 class="main-caption">Make Holiday with <span class="logo-name">Gogaga</span><span class="exclaim">!</span></h1>
+                <p class="main-para">Make the amotion HaHaHa....</p>
+            </div>
+        </div>
+    </div>
+    <!--Tourisim Places-->
+    <div id="sectionHoliday">
+        <div class="holiday-places">
+            <h1 class="holiday-head">
+                Holiday Trips....
+            </h1>
+            <div class="trips-cont">
+                <a href="#" data-toggle="modal" data-target="#losVegas"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/GG8H5ywZTB2qDgJ88eKoXw.png"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            Los Vegas
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div>
+                </a>
+                <div class="modal fade" id="losVegas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Los Vegas</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/GG8H5ywZTB2qDgJ88eKoXw.png"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#california"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/AkqwvEf_RoSfPvttmPWrJQ.jpg"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            Yosemite National Park, California
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div>
+                </a>
+                <div class="modal fade" id="california" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Yosemite National Park, California</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/AkqwvEf_RoSfPvttmPWrJQ.jpg"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#disney"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/r-wd2xyOT9mBx5EeDym0QA.png"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            Disney World Resort, Florida
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div></a>
+                <div class="modal fade" id="disney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Disney World Resort, Florida</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/r-wd2xyOT9mBx5EeDym0QA.png"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#Francisco"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/dFRz8yIMQk2BlvdMmKVKOg.jpg"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            San Francisco, California
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div></a>
+                <div class="modal fade" id="Francisco" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">San Francisco, California</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/dFRz8yIMQk2BlvdMmKVKOg.jpg"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#Washington"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/_AdAGk7cQb6E4eIN64o5FQ.png"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            Washington, D.C
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div></a>
+                <div class="modal fade" id="Washington" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Washington, D.C</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/_AdAGk7cQb6E4eIN64o5FQ.png"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#Teton"  class="trip-card">
+                <div>
+                    <img class="trip-img" src="https://ideogram.ai/api/images/direct/hF7y09BZTSa1w58rZpO7zw.jpg"/>
+                    <div class="text-cont">
+                        <h1 class="card-head">
+                            Grand Teton National Park, Wyoming
+                        </h1>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div></a>
+                <div class="modal fade" id="Teton" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="myModalLabel">Grand Teton National Park, Wyoming</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="big-img-place" src="https://ideogram.ai/api/images/direct/hF7y09BZTSa1w58rZpO7zw.jpg"/>
+                            <p class="place-content">
+                                Dubbed the "Entertainment Capital of the World," Las Vegas is famous for its vibrant nightlife, luxury hotels, world-class casinos, and entertainment shows.
+                            </p>
+                            <ul>
+                                <li class="list-item">The Strip</li>
+                                <li class="list-item">Fremont Street Experience</li>
+                                <li class="list-item">Bellagio Fountains</li>
+                                <li class="list-item">High Roller Observation Wheel</li>
+                                <li class="list-item">Red Rock Canyon National Conservation Area</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Choose This</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Flight Booking-->
+    <div class="flight-book-cont" id="sectionFlight">
+        <div class="flight-cont">
+            <h1 class="holiday-head">Flight Booking</h1>
+            <p class="main-para">Flights are being flyed for holidays!!!!!</p>
+            <form class="search-form">
+              <input type="text" name="departure" placeholder="Departure" class="text-holder">
+              <input type="text" name="destination" placeholder="Destination" class="text-holder">
+              <input type="date" name="departure-date" class="text-holder">
+              <input type="submit" value="Search" class="btn btn-primary search-flight">
+            </form>
+            <div class="results">
+                <!-- Dummy flight search results as a table -->
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Flight Number</th>
+                      <th>Departure</th>
+                      <th>Destination</th>
+                      <th>Departure Date</th>
+                      <th>Price</th>
+                      <th></th> <!-- Empty header for the choose button -->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Dummy flight information -->
+                    <tr>
+                      <td>FL001</td>
+                      <td>New York</td>
+                      <td>Los Angeles</td>
+                      <td>2024-03-25</td>
+                      <td>$300</td>
+                      <td><button>Choose</button></td>
+                    </tr>
+                    <tr>
+                      <td>FL002</td>
+                      <td>Chicago</td>
+                      <td>Washington</td>
+                      <td>2024-04-10</td>
+                      <td>$250</td>
+                      <td><button>Choose</button></td>
+                    </tr>
+                    <tr>
+                        <td>FL003</td>
+                        <td>Washington</td>
+                        <td>Wyoming</td>
+                        <td>2024-05-11</td>
+                        <td>$250</td>
+                        <td><button>Choose</button></td>
+                      </tr>
+                      <tr>
+                        <td>FL004</td>
+                        <td>Tendon</td>
+                        <td>Sanfransisco</td>
+                        <td>2024-04-20</td>
+                        <td>$250</td>
+                        <td><button>Choose</button></td>
+                      </tr>
+                      <tr>
+                        <td>FL005</td>
+                        <td>Chicago</td>
+                        <td>Los Vegas</td>
+                        <td>2024-06-10</td>
+                        <td>$250</td>
+                        <td><button>Choose</button></td>
+                      </tr>                      
+                  </tbody>
+                </table>
+              </div>
+          </div>
+    </div>
+    <!--Hotel Booking-->
+    <div class="explore-hotel-section" id="sectionHotel">
+      <h1 class="hotel-section-heading">Hotel Booking</h1>
+      <div class="hotels-cont">
+        <div class="hotel-item">
+          <div class="shadow hotel-card p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/kKtDOoQ7Tkma7FE5G2FP8A.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Hotel America</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="shadow hotel-card p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/NTcaBe1tQtOuaum0o0Kd5A.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Sanfransisco Hotel</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/7xR5eDGYR3G0h0QpfWfb-w.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Cube Hotel</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/na6zCTxNTcqIEUTQAPyTfA.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Rocket Hotel</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/88Guh0XJRVi5jzvaNwKOnQ.png"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Royal Hotel</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/BxTXfVWORse4bEgQasstVA.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Hotel Lovega</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/a29vZO1jTKamdXtqwA_LmQ.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Hotel DCWash</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hotel-item">
+          <div class="hotel-card shadow p-3 mb-3">
+            <img
+              src="https://ideogram.ai/api/images/direct/NUiuZ7BFQ_KRmKB61JY30Q.jpg"
+              class="hotel-image w-100"
+            />
+            <h1 class="hotel-card-title">Night Hotel</h1>
+            <a href="" class="hotel-card-link">
+              View All
+              <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Package Collection-->
+    <div class="package-cont" id="sectionPackage">
+      <h1 class="holiday-head">Packages</h1>
+      <div class="cards-cont">
+        <div class="package-card">
+          <i class="fa-brands fa-space-awesome"></i>
+          <h1 class="main-para">Adventure Escapes</h1>
+          <p class="para">Explore adrenaline-pumping activities such as hiking, zip-lining, rock climbing, and white-water rafting in breathtaking natural landscapes.</p>
+        </div>
+        <div class="package-card">
+          <i class="fa-solid fa-gift"></i>
+          <h1 class="main-para">Luxury Getaways</h1>
+          <p class="para">Indulge in opulent accommodations, fine dining experiences, spa treatments, and personalized services at exclusive resorts and luxury hotels.</p>
+        </div>
+        <div class="package-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h1 class="main-para" >Family Fun Vacations</h1>
+          <p class="para">Enjoy family-friendly activities and attractions such as theme parks, water parks, museums, and kid-friendly tours designed to entertain and delight travelers of all ages.</p>
+        </div>
+        <div class="package-card">
+          <i class="fa-brands fa-pagelines"></i>
+          <h1 class="main-para">Eco-Friendly Adventures</h1>
+          <p class="para">Embark on sustainable travel experiences that promote environmental conservation and responsible tourism practices, including eco-friendly accommodations, wildlife conservation tours, and eco-conscious excursions.</p>
+        </div>
+      </div>
+    </div>
+    <!--Follow us section-->
+    <div class="follow-us-section pt-5 pb-5" id="sectionFollow">
+      <h1 class="follow-us-section-heading">Follow Us</h1>
+          <div class="d-flex flex-row justify-content-center media">
+            <div class="follow-us-icon-container">
+              <i class="fab fa-twitter icon"></i>
+            </div>
+            <div class="follow-us-icon-container">
+              <i class="fab fa-instagram icon"></i>
+            </div>
+            <div class="follow-us-icon-container">
+              <i class="fab fa-facebook icon"></i>
+            </div>
+          </div>
+    </div>
+    <!--Footer-->
+    <div class="footer-section pt-5 pb-5">
+      <a href="#sectionHome">
+        <img src="https://static.wixstatic.com/media/2d34e5_1e4b2c2047144b8484c6e78ad38dcb9d~mv2.jpg/v1/fill/w_242,h_99,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GOGAGA%20NEW%20LOGO%20FINAL-01.jpg" class="logo"/>
+      </a>
+      <h1 class="footer-section-mail-id">gogaga@holiday.com</h1>
+      <p class="footer-section-address">
+        123 Ayur Vigyan Nagar, New Delhi, India.
+      </p>
+    </div>
+  </body>
+</html>
